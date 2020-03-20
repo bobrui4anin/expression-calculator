@@ -72,7 +72,7 @@ function expressionCalculator(expr) {
             if (stackWithPriority[i] == '+') {
                 tempStack.pop();
                 tempStack.pop();
-                tempStack.push(+leftOperand + +rightOperand);
+                tempStack.push(leftOperand + rightOperand);
             }
 
             if (stackWithPriority[i] == '-') {
